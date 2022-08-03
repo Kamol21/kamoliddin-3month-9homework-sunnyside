@@ -1,0 +1,545 @@
+@font-face {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/fraunces-v23-latin-900.woff2') format('woff2'),
+         url('../fonts/fraunces-v23-latin-900.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/barlow-v12-latin-600.woff2') format('woff2'),
+         url('../fonts/barlow-v12-latin-600.woff') format('woff');
+  }
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Fraunces", "Arial", sans-serif;
+  font-weight: 900;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container{
+  max-width: 1430px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main{
+  flex-grow: 1;
+}
+.site-header {
+    background-color: #49bcf1;
+}
+.site-header__intro {
+    padding: 34px 0;
+    display: flex;
+    align-items: center;
+}
+.site-header__logo-mobile {
+    display: none;
+}
+.site-header__logo-desktop {
+    display: block;
+}
+.site-header__navlist {
+    margin-left: auto;
+}
+.site-header__list {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.site-header__items {
+    margin-right: 47px;
+}
+.site-header__links {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    letter-spacing: -0.128571px;
+    color: #FFFFFF;    
+}
+.site-header__button {
+    padding: 16px 32px;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    letter-spacing: -0.107143px;
+    text-transform: uppercase;
+    color: #24303E;
+    background-color: #FFFFFF;
+    border-radius: 28px;    
+}
+.site-header__hamburger-button {
+    display: none;
+}
+.s1 {
+    width: 100%;
+    /* height: 800px; */
+    margin: -5px auto 0 auto;
+    background-image: url("../images/intro-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #49bcf1;
+    /* background-position: calc(50%) calc(0% + 0px); */
+}
+.s1__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s1__title {
+    margin-bottom: 110px;
+    padding-top: 135px;
+    font-size: 56px;
+    line-height: 69px;
+    text-align: center;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+    color: #FFFFFF;    
+}
+.s2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f9da00;
+}
+.s2__left-box {
+    width: 50%;
+    padding: 212px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+.s2__title-and-text-and-button-box {
+    max-width: 445px;
+}
+.s2__title {
+    margin: 0 0 32px 0;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+    color: #24303E;    
+}
+.s2__text {
+    margin: 0 0 40px 0;
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.128571px;
+    color: #808397;
+}
+.s2__button {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #24303E;
+    border-bottom: 10px solid #fef2ba;
+    border-radius: 5px;
+}
+.s2__button:hover {
+    border-bottom: 10px solid #f9d500;
+}
+.s2__right-box {
+    width: 50%;
+}
+.s2__right-img-mobile {
+    display: none;
+}
+.s2__right-img {
+    width: 100%;
+    height: auto;
+}
+.s3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ff7e70;
+}
+.s3__left-box {
+    width: 50%;
+}
+.s3__left-img {
+    width: 100%;
+    height: auto;
+}
+.s3__left-img-mobile {
+    display: none;
+}
+.s3__right-box {
+    width: 50%;
+    padding: 212px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+.s3__title-and-text-and-button-box {
+    max-width: 445px;
+}
+.s3__title {
+    margin: 0 0 32px 0;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+    color: #24303E;
+}
+.s3__text {
+    margin: 0 0 40px 0;
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.128571px;
+    color: #808397;
+}
+.s3__button {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #24303E;
+    border-bottom: 10px solid #ffdbd4;
+    border-radius: 5px;
+}
+.s3__button:hover {
+    border-bottom: 10px solid #ff7163;
+}
+.s4 {
+    width: 100%;
+    display: flex;align-items: center;
+}
+.s4__left-box {
+    width: 50%;
+    padding: 398px 0 59px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/gilos.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.s4__right-box {
+    width: 50%;
+    padding: 398px 0 59px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/photography.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.s4__title-and-text-box {
+    max-width: 340px;
+}
+.s4__title {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #24554A;
+}
+.s4__text {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: -0.114286px;
+    color: #3E7467;
+}
+
+
+@media only screen and (max-width: 650px){
+    .site-header {
+        background-color: #49bcf1;
+    }
+    .site-header__intro {
+        padding: 34px 0;
+        display: flex;
+        align-items: center;
+    }
+    .site-header__logo-mobile {
+        display: block;
+    }
+    .site-header__logo-desktop {
+        display: none;
+    }
+    .site-header__navlist {
+        display: none;
+        margin-left: auto;
+    }
+    .site-header__list {
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    .site-header__items {
+        margin-right: 47px;
+    }
+    .site-header__links {
+        font-family: "Barlow";
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-decoration: none;
+        letter-spacing: -0.128571px;
+        color: #FFFFFF;    
+    }
+    .site-header__button {
+        display: none;
+        padding: 16px 32px;
+        font-size: 15px;
+        line-height: 25px;
+        text-decoration: none;
+        letter-spacing: -0.107143px;
+        text-transform: uppercase;
+        color: #24303E;
+        background-color: #FFFFFF;
+        border-radius: 28px;    
+    }
+    .site-header__button:hover {
+        background-color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        border-radius: 28px;
+    }
+    .site-header__hamburger-button {
+        display: block;
+        margin-left: auto;
+        background-image: url("../images/hamburger.svg");
+        background-repeat: no-repeat;
+        border: none;
+    }
+    .s1 {
+        width: 100%;
+        /* height: 800px; */
+        margin: -5px auto 0 auto;
+        background-image: url("../images/intro-bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-color: #fff;
+        /* background-position: calc(50%) calc(0% + 0px); */
+    }
+    .s1__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .s1__title {
+        margin-bottom: 32px;
+        padding-top: 135px;
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+        letter-spacing: 6.25px;
+        text-transform: uppercase;
+        color: #FFFFFF;        
+    }
+    .s1__button-link {
+        margin-bottom: 107px;
+    }
+    .s2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-color: #fff;
+    }
+    .s2__left-box {
+        width: 50%;
+        padding: 64px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+    }
+    .s2__title-and-text-and-button-box {
+        max-width: 327px;
+    }
+    .s2__title {
+        margin: 0 0 32px 0;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: -0.228571px;
+        color: #24303E;   
+    }
+    .s2__text {
+        margin: 0 0 40px 0;
+        font-family: "Barlow";
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.128571px;
+        color: #808397;
+    }
+    .s2__button {
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #24303E;
+        border-bottom: 10px solid #fef2ba;
+        border-radius: 5px;
+    }
+    .s2__right-box {
+        width: 50%;
+    }
+    .s2__right-img-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .s2__right-img {
+        display: none;
+    }
+    .s3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+    }
+    .s3__left-box {
+        width: 50%;
+    }
+    .s3__left-img {
+        display: none;
+    }
+    .s3__left-img-mobile {
+        display: block;
+        height: auto;
+    }
+    .s3__left-img-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .s3__right-box {
+        width: 50%;
+        padding: 64px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+    }
+    .s3__title-and-text-and-button-box {
+        max-width: 327px;
+    }
+    .s3__title {
+        margin: 0 0 32px 0;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: -0.285714px;
+        color: #24303E;
+    }
+    .s3__text {
+        margin: 0 0 40px 0;
+        font-family: "Barlow";
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.128571px;
+        color: #808397;
+    }
+    .s3__button {
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #24303E;
+        border-bottom: 10px solid #ffdbd4;
+        border-radius: 5px;
+    }
+    .s4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .s4__left-box {
+        width: 50%;
+        padding: 398px 0 59px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../images/gilos-moblie.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .s4__right-box {
+        width: 50%;
+        padding: 398px 0 59px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../images/photography-moblie.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .s4__title-and-text-box {
+        max-width: 340px;
+    }
+    .s4__title {
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+        letter-spacing: -0.2px;
+        color: #24554A;
+    }
+    .s4__text {
+        font-family: "Barlow";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: -0.114286px;
+        color: #3E7467;
+    }
+    
+}
