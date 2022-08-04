@@ -346,6 +346,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 .s6__grid-box {
     margin: 0 auto;
@@ -355,22 +356,22 @@ body{
 .img1 {
     background-image: url("../images/kefir-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .img2 {
     background-image: url("../images/eggs-lemon-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .img3 {
     background-image: url("../images/ice-bread-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .img4 {
     background-image: url("../images/sugar-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .site-footer {
     padding: 64px 0 80px 0;
@@ -411,7 +412,9 @@ body{
 .site-footer__icons:not(:last-child) {
     margin-right: 28px;
 }
-
+.site-footer__icons-imgs {
+    color: #478679;
+}
 
 @media only screen and (max-width: 700px){
     .site-header {
@@ -576,6 +579,10 @@ body{
         background-color: #fff;
         border-radius: 28px;  
     }
+    .site-header__button:hover {
+        background-color: #78cef5;
+        cursor: pointer;
+    }
     .s1 {
         margin-top: -10px;
         background-image: url("../images/intro-bg.png");
@@ -665,6 +672,9 @@ body{
         border-bottom: 10px solid #fef2ba;
         border-radius: 5px;
     }
+    .s2__button:hover {
+        border-bottom: 10px solid #f8d40b;
+    }
     .s2__right-box {
         width: 50%;
         height: 600px;
@@ -728,6 +738,9 @@ body{
         color: #24303E;
         border-bottom: 10px solid #ffdbd4;
         border-radius: 5px;
+    }
+    .s3__button:hover {
+        border-bottom: 10px solid #ed5e55;
     }
     .s4 {
         width: 100%;
@@ -799,7 +812,9 @@ body{
     .img4 {
         background-image: url("../images/sugar.jpg");
     }
-
+    .site-footer__icons-imgs:hover {
+        color: #fff;
+    }
 
 }
 
