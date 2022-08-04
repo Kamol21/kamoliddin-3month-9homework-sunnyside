@@ -342,6 +342,75 @@ body{
     letter-spacing: -0.1px;
     color: #A7AAAD;    
 }
+.s6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s6__grid-box {
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(2, 188px) / repeat(2, 188px);
+}
+.img1 {
+    background-image: url("../images/kefir-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img2 {
+    background-image: url("../images/eggs-lemon-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img3 {
+    background-image: url("../images/ice-bread-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img4 {
+    background-image: url("../images/sugar-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.site-footer {
+    padding: 64px 0 80px 0;
+    background-color: #90d4c6;
+}
+.site-footer__intro {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.site-footer__list {
+    margin: 40px 0 88px 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+.site-footer__items {
+    
+}
+.site-footer__items:not(:last-child) {
+    margin-right: 57px;
+}
+.site-footer__link {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    letter-spacing: -0.128571px;
+    color: #458D7E;    
+}
+.site-footer__icons-box {
+    display: flex;
+    align-items: center;
+}
+.site-footer__icons:not(:last-child) {
+    margin-right: 28px;
+}
 
 
 @media only screen and (max-width: 700px){
@@ -435,6 +504,11 @@ body{
     }
     .s5__items {
         max-width: 350px;
+    }
+    .s6__grid-box {
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(1, 188px) / repeat(4, 188px);
     }
 
 
@@ -707,6 +781,23 @@ body{
     }
     .s5__items-text {
         margin: 58px 0 69px 0;
+    }
+    .s6__grid-box {
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(1, 447px) / repeat(4, 360px);
+    }
+    .img1 {
+        background-image: url("../images/kefir.jpg");
+    }
+    .img2 {
+        background-image: url("../images/eggs-lemon.jpg");
+    }
+    .img3 {
+        background-image: url("../images/ice-bread.jpg");
+    }
+    .img4 {
+        background-image: url("../images/sugar.jpg");
     }
 
 
